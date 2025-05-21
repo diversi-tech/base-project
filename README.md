@@ -1,12 +1,12 @@
 # Mekimi financial meetings system
 
-A web application for tracking financial meetings with families, with an Express.js backend API and React frontend.
+A base-project web application, with an Express.js backend API and React frontend.
 
 ## Prerequisites
 
-- Node.js (v22+)
-- Yarn
-- Git
+- Node.js (v22+) [https://nodejs.org/en/download]
+- Yarn [https://classic.yarnpkg.com/lang/en/docs/install]
+- Git [https://github.com/git-guides/install-git]
 
 ## Quick Start
 
