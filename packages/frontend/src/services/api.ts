@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { FamilyMeeting } from '../types';
+import { Item } from '../types';
 
 // Get the API URL from environment variables, default to localhost for development
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
@@ -13,9 +13,9 @@ const api = axios.create({
 });
 
 // Function to fetch a store item by ID
-export const getItemById = async (id: number): Promise<FamilyMeeting> => {
+export const getItemById = async (id: number): Promise<Item> => {
   try {
-    const response = await api.get<FamilyMeeting>(`/items/${id}`);
+    const response = await api.get<Item>(`/items/${id}`);
     return response.data;
   } catch (error) {
     console.error('Error fetching item:', error);

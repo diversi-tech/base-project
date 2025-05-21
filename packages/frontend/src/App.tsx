@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Mekimi family meeting viewer</h1>
+        <h1>Project base viewer</h1>
       </header>
       <main>
         <ItemDisplay />

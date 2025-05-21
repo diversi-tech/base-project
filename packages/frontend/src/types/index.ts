@@ -1,5 +1,5 @@
-export interface FamilyMeeting {
-  familyId: number;
-  name: string;
-  money: number;
+export interface Item {
+  id: number;
+  status: string;
+  message: string;
 }

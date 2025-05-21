@@ -1,4 +1,4 @@
-# Mekimi financial meetings system
+# Base Project
 
 A base-project web application, with an Express.js backend API and React frontend.
 

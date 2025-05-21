@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { getItemById } from '../services/api';
-import { FamilyMeeting } from '../types';
+import { Item } from '../types';
 
 const ItemDisplay: React.FC = () => {
-  const [item, setItem] = useState<FamilyMeeting | null>(null);
+  const [item, setItem] = useState<Item | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -31,11 +31,10 @@ const ItemDisplay: React.FC = () => {
 
   return (
     <div className="item-display">
-      <h2>Family Meeting Details</h2>
+      <h2>Welcome to BaseProject</h2>
       <div className="item-card">
-        <h3>{item.name}</h3>
-        <p>Family ID: {item.familyId}</p>
-        <p>Money: ₪{item.money.toFixed(2)}</p>
+        <h3>{item.message}</h3>
+        <p>Status: {item.status}</p>
       </div>
       <div className="item-json">
         <h3>JSON Data:</h3>

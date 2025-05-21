@@ -9,9 +9,9 @@ router.get('/', (req, res) => {
 // Get item by ID
 router.get('/:id', (req, res) => {
   const mockItem = {
-    familyId: parseInt(req.params.id, 10),
-    name: 'Cohen family',
-    money: 14000,
+    id: parseInt(req.params.id, 10),
+    status: 'Success',
+    message: '✅ Backend is running',
   };
   res.json(mockItem);
 });
